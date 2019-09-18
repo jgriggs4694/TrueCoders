@@ -1,0 +1,56 @@
+﻿using System;
+using System.Collections.Generic;
+
+namespace TrueCoders
+{
+    public class People
+    {
+        public object GetAge;
+        public object GetFirstName;
+        public object GetLastName;
+        public object GetHairColor;
+
+        static void Main(string[] args)
+        {
+            People instance1 = new People();
+            People instance2 = new People();
+            People instance3 = new People();
+
+            People instanceExample = new People();
+            instanceExample.GetAge = "";
+            instanceExample.GetFirstName = "";
+            instanceExample.GetLastName = "";
+            instanceExample.GetHairColor = "";
+
+            instance1 = new People();
+            instance1.GetAge = "20";
+            instance1.GetFirstName = "Jackson";
+            instance1.GetLastName = "Griggs";
+            instance1.GetHairColor = "Blonde";
+
+            instance2 = new People();
+            instance2.GetAge = "21";
+            instance2.GetFirstName = "Matthew";
+            instance2.GetLastName = "Leblanc";
+            instance2.GetHairColor = "Black";
+
+            instance3 = new People();
+            instance3.GetAge = "26";
+            instance3.GetFirstName = "Frederick";
+            instance3.GetLastName = "Lindsey";
+            instance3.GetHairColor = "Black";
+
+            List<People> TrueCoders = new List<People>();
+            TrueCoders.Add(instance1);
+            TrueCoders.Add(instance2);
+            TrueCoders.Add(instance3);
+
+            
+            
+            Console.WriteLine($"Age: {instance1.GetAge}, FirstName: {instance1.GetFirstName}, LastName: {instance1.GetLastName}, HairColor: {instance1.GetHairColor}");
+            Console.WriteLine($"Age: {instance2.GetAge}, FirstName: {instance2.GetFirstName}, LastName: {instance2.GetLastName}, HairColor: {instance2.GetHairColor}");
+            Console.WriteLine($"Age: {instance3.GetAge}, FirstName: {instance3.GetFirstName}, LastName: {instance3.GetLastName}, HairColor: {instance3.GetHairColor}");
+            
+        }
+    }
+}
